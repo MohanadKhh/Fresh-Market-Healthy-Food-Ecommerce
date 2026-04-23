@@ -7,7 +7,7 @@ A fully-featured RESTful backend API for an e-commerce platform built with **ASP
 ## 📋 Table of Contents
 
 - [Overview](#overview)
-- [Testing](#testing)
+- [Testing Video](#testing)
 - [Architecture](#architecture)
 - [Tech Stack](#tech-stack)
 - [Features](#features)
@@ -16,6 +16,8 @@ A fully-featured RESTful backend API for an e-commerce platform built with **ASP
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 - [Authentication](#authentication)
+- [License](#license)
+
 
 ---
 
