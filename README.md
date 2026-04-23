@@ -7,6 +7,7 @@ A fully-featured RESTful backend API for an e-commerce platform built with **ASP
 ## 📋 Table of Contents
 
 - [Overview](#overview)
+- [Testing](#testing)
 - [Architecture](#architecture)
 - [Tech Stack](#tech-stack)
 - [Features](#features)
@@ -15,13 +16,27 @@ A fully-featured RESTful backend API for an e-commerce platform built with **ASP
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 - [Authentication](#authentication)
-- [Testing](#testing)
 
 ---
 
 ## Overview
 
 ECommerce API is a backend-only system that allows users to browse products, manage their cart, and place orders. It supports role-based access control with **Admin** and **User** roles, JWT authentication, and clean N-Tier architecture.
+
+---
+
+## Testing
+
+A full Postman testing walkthrough is available here:
+
+🎥 **[Postman Testing Video →](https://drive.google.com/file/d/1bLUjw1jQVRSDvzhe9jKHrSof1RtIvpZE/view?usp=sharing)**
+
+**To test locally:**
+1. Run the project
+2. Open Scalar at `https://localhost:7021/scalar`
+3. Register a user or use the default admin account
+4. Copy the JWT token from login response
+5. Use `Bearer <token>` in Authorization header for protected endpoints
 
 ---
 
@@ -284,15 +299,6 @@ Password: Admin@123456
 
 ---
 
-## Testing
+## License
 
-A full Postman testing walkthrough is available here:
-
-🎥 **[Postman Testing Video →](https://drive.google.com/file/d/1bLUjw1jQVRSDvzhe9jKHrSof1RtIvpZE/view?usp=sharing)**
-
-**To test locally:**
-1. Run the project
-2. Open Scalar at `https://localhost:7021/scalar`
-3. Register a user or use the default admin account
-4. Copy the JWT token from login response
-5. Use `Bearer <token>` in Authorization header for protected endpoints
+Eng. Mohanad Khaled
