@@ -1,0 +1,86 @@
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerc.A91174C8.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\refint\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.BLL\obj\Debug\net10.0\ref\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerc.A91174C8.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\refint\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ref\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\refint\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ECommerc.A91174C8.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\obj\Debug\net10.0\ref\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.Common.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.BLL\bin\Debug\net10.0\ECommerce.Common.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\bin\Debug\net10.0\ECommerce.Common.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\bin\Debug\net10.0\ECommerce.Common.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerc.A91174C8.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\refint\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.BLL\obj\Debug\net10.0\ref\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\bin\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\bin\Debug\net10.0\ECommerce.Common.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\bin\Debug\net10.0\ECommerce.Common.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerc.A91174C8.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\refint\ECommerce.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ECommerce.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.BLL\obj\Debug\net10.0\ref\ECommerce.BLL.dll

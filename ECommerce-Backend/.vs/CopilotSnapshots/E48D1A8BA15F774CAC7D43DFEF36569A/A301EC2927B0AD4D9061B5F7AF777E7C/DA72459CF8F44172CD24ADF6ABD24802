@@ -1,0 +1,100 @@
+﻿using ECommerce.Common;
+using ECommerce.DAL;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+
+namespace ECommerce.BLL
+{
+    public class AuthManager : IAuthManager
+    {
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly JwtSettings _jwtSetting;
+
+        public AuthManager(UserManager<ApplicationUser> userManager
+            , SignInManager<ApplicationUser> signInManager
+            , IOptions<JwtSettings> jwtOptions)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _jwtSetting = jwtOptions.Value;
+        }
+
+        public async Task<GeneralResult> RegisterUserAsync(RegisterDto registerDto)
+        {
+            var applicationUser = new ApplicationUser
+            {
+                FirstName = registerDto.FirstName,
+                LastName = registerDto.LastName,
+                Email = registerDto.Email,
+                UserName = registerDto.UserName
+            };
+
+            IdentityResult result = await _userManager.CreateAsync(applicationUser, registerDto.Password);
+
+            if (!result.Succeeded)
+            {
+                return GeneralResult.FailedResult("User registration failed");
+            }
+            IdentityResult addRoleResult = await _userManager.AddToRoleAsync(applicationUser, "User");
+
+            if (!addRoleResult.Succeeded)
+            {
+                return GeneralResult.FailedResult("Role assignment failed");
+            }
+
+            return GeneralResult.SuccessedResult("User registered successfully");
+        }
+
+        public async Task<GeneralResult<TokenDto>> LoginUserAsync(LoginDto loginDto)
+        {
+            var user = await _userManager.FindByEmailAsync(loginDto.Email);
+            if (user == null)
+            {
+                return GeneralResult<TokenDto>.NotFound("Invalid Email or Password");
+            }
+            SignInResult result = await _signInManager.PasswordSignInAsync(user, loginDto.Password, isPersistent: false, lockoutOnFailure: false);
+            if (!result.Succeeded)
+            {
+                return GeneralResult<TokenDto>.FailedResult("Invalid Email or Password");
+            }
+
+            List<Claim> claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id),
+                new Claim(ClaimTypes.Email, user.Email ?? string.Empty),
+                new Claim(ClaimTypes.Name, user.FullName)
+            };
+
+            var token = GenerateToken(claims);
+            return GeneralResult<TokenDto>.SuccessedResult(token, "User logged in successfully");
+        }
+
+        private TokenDto GenerateToken(List<Claim> claims)
+        {
+            var keyFromConfig = _jwtSetting.SecretKey;
+            var keyInBytes = Convert.FromBase64String(keyFromConfig);
+            var key = new SymmetricSecurityKey(keyInBytes);
+
+            var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expiration = DateTime.UtcNow.AddMinutes(_jwtSetting.ExpirationInMinutes);
+
+            var jwt = new JwtSecurityToken(
+                issuer: _jwtSetting.Issuer,
+                audience: _jwtSetting.Audience,
+                claims: claims,
+                expires: expiration,
+                signingCredentials: signingCredentials
+            );
+
+            var tokenHandler = new JwtSecurityTokenHandler().WriteToken(jwt);
+            var tokenDto = new TokenDto(tokenHandler,
+                            _jwtSetting.ExpirationInMinutes);
+
+            return tokenDto;
+        }
+    }
+}

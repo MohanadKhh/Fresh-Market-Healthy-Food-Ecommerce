@@ -1,0 +1,18 @@
+﻿namespace ECommerce.BLL
+{
+    public class ProductWriteDto
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
+        public string Unit { get; set; } = "kg";
+        public int Reviews { get; set; }
+        public bool IsOrganic { get; set; }
+        public bool IsFeatured { get; set; }
+        public DateOnly CreatedAt { get; set; } = DateOnly.FromDateTime(DateTime.UtcNow);
+        public string? ImageUrl { get; set; }
+        public DateOnly ExpiryDate { get; set; }
+        public int CategoryId { get; set; }
+    }
+}

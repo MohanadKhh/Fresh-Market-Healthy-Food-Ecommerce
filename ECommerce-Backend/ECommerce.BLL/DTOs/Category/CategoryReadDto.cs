@@ -1,0 +1,17 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace ECommerce.BLL
+{
+    public class CategoryReadDto
+    {
+        public int Id { get; set; }
+
+        [Required]
+        [StringLength(20, MinimumLength = 3)]
+        public required string Name { get; set; }
+        public string Description { get; set; } = string.Empty;
+        public string? ImageUrl { get; set; }
+        public int ProductCount { get; set; }
+        public IEnumerable<ProductReadDto>? Products { get; set; }
+    }
+}

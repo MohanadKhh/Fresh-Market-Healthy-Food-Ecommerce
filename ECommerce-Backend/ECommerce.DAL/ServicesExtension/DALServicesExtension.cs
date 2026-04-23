@@ -1,0 +1,25 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+
+namespace ECommerce.DAL
+{
+    public static class DALServicesExtension
+    {
+        public static void AddDALServices(this IServiceCollection services, IConfiguration conf)
+        {
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            services.AddDbContext<AppDbContext>(
+            options =>
+            {
+                options.UseSqlServer(conf.GetConnectionString("ECommerce"));
+            });
+        }
+    }
+}

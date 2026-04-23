@@ -1,0 +1,28 @@
+﻿using ECommerce.DAL;
+
+namespace ECommerce.BLL
+{
+    public static class CartMapper
+    {
+        public static CartReadDto ToReadDto(this Cart cart) => new()
+        {
+            Id = cart.Id,
+            UserId = cart.UserId,
+            CartItems = (cart.CartItems ?? []).Select(ci => ci.ToReadDto()).ToList(),
+        };
+
+        public static CartItemReadDto ToReadDto(this CartItem cartItem) => new()
+        {
+            Id = cartItem.Id,
+            Quantity = cartItem.Quantity,
+            Product = cartItem.Product.ToReadDTO()
+        };
+
+        public static CartItem FromWriteDto(this CartItemWriteDto cartItemWriteDto) => new()
+        {
+            CartId = cartItemWriteDto.CartId,
+            ProductId = cartItemWriteDto.ProductId,
+            Quantity = cartItemWriteDto.Quantity,
+        };
+    }
+}

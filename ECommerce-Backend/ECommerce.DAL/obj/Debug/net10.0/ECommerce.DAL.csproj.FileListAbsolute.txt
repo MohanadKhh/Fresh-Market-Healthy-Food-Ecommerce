@@ -1,0 +1,84 @@
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.runtimeconfig.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\refint\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET Core\Labs\Lab8_and_Lab9\ECommerce.DAL\obj\Debug\net10.0\ref\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.runtimeconfig.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\refint\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-Lab12-APIs-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ref\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.runtimeconfig.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\refint\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ref\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.Common.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\bin\Debug\net10.0\ECommerce.Common.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab11-12-Async-Validation-Mapper\ECommerce.DAL\obj\Debug\net10.0\ECommerc.37DF4472.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.runtimeconfig.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\bin\Debug\net10.0\ECommerce.Common.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\bin\Debug\net10.0\ECommerce.Common.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerc.37DF4472.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\refint\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Labs\Lab13-Files-Pagination-Filters\ECommerce.DAL\obj\Debug\net10.0\ref\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.runtimeconfig.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\bin\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\bin\Debug\net10.0\ECommerce.Common.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\bin\Debug\net10.0\ECommerce.Common.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerc.37DF4472.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\refint\ECommerce.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ECommerce.DAL.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\Back-end\ASP.NET-Core\API\Project\ECommerce-Backend\ECommerce.DAL\obj\Debug\net10.0\ref\ECommerce.DAL.dll

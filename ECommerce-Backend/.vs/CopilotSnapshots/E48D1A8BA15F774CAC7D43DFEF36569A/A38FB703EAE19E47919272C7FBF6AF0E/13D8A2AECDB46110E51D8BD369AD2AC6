@@ -1,0 +1,17 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "ECommerce": "Server=.\\SQLEXPRESS;DataBase=ECommerce_Project;Trusted_Connection=true;TrustServerCertificate=true"
+  },
+  "JwtSettings": {
+    "Issuer": "ECommerce",
+    "Audience": "ECommerceClient",
+    "DurationInMinutes": 600,
+    "SecretKey": "MohanadSecretKey"
+  }
+}

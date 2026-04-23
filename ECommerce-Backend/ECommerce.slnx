@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ECommerce.APIs/ECommerce.APIs.csproj" />
+  <Project Path="ECommerce.BLL/ECommerce.BLL.csproj" />
+  <Project Path="ECommerce.Common/ECommerce.Common.csproj" Id="47e1f497-af5a-43fd-8005-26a98c3e508e" />
+  <Project Path="ECommerce.DAL/ECommerce.DAL.csproj" />
+</Solution>

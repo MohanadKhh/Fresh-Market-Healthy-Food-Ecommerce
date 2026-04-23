@@ -1,0 +1,20 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ECommerce.DAL
+{
+    public class Category
+    {
+        public int Id { get; set; }
+        public required string Name { get; set; }
+        public string Description { get; set; } = string.Empty;
+
+        [Column("Image")]
+        public string? ImageUrl { get; set; }
+
+        [NotMapped]
+        public int ProductCount => Products.Count;
+
+        public bool IsDeleted { get; set; } = false;
+        public virtual ICollection<Product> Products { get; set; } = new HashSet<Product>();
+    }
+}

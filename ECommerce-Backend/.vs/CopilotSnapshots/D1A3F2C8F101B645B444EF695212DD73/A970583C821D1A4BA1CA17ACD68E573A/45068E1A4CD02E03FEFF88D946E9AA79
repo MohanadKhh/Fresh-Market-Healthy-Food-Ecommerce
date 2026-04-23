@@ -1,0 +1,31 @@
+﻿using ECommerce.DAL;
+
+namespace ECommerce.BLL
+{
+    public static class ProductMapper
+    {
+        public static ProductReadDto ToReadDto(this Product product) => new()
+        {
+            Id = product.Id,
+            Name = product.Name,
+            Description = product.Description,
+            Price = product.Price,
+            Count = product.Stock,
+            ExpiryDate = product.ExpiryDate ?? new DateOnly(1, 1, 1),
+            ImageUrl = product.ImageUrl,
+            CategoryId = product.CategoryId,
+            CategoryName = product.Category?.Name ?? "N/A"
+        };
+
+        public static Product ToProductModel(this ProductWriteDto productWriteDTO) => new()
+        {
+            Name = productWriteDTO.Name,
+            Description = productWriteDTO.Description,
+            Price = productWriteDTO.Price,
+            Stock = productWriteDTO.Count,
+            ImageUrl = productWriteDTO.ImageUrl,
+            ExpiryDate = productWriteDTO.ExpiryDate,
+            CategoryId = productWriteDTO.CategoryId
+        };
+    }
+}

@@ -1,0 +1,139 @@
+﻿using ECommerce.Common;
+using ECommerce.Common.Pagination;
+using ECommerce.DAL;
+using FluentValidation;
+
+namespace ECommerce.BLL
+{
+    public class ProductManager : IProductManager
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IValidator<ProductWriteDto> _writeProductValidator;
+        public ProductManager(IUnitOfWork unitOfWork, IValidator<ProductWriteDto> writeProductValidator)
+        {
+            _unitOfWork = unitOfWork;
+            _writeProductValidator = writeProductValidator;
+        }
+
+        public async Task<GeneralResult<IEnumerable<ProductReadDto>>> GetAllProductsAsync()
+        {
+            var products = await _unitOfWork.ProductRepository.GetAllWithCategoryAsync();
+
+            //Mapping to DTO
+            var productsReadDto = products.Select(p => p.ToReadDto());
+
+            return GeneralResult<IEnumerable<ProductReadDto>>.SuccessedResult(productsReadDto);
+        }
+
+        public async Task<GeneralResult<PaginationResult<Product>>> GetAllProductsByPaginationAsync
+            (PaginationParameters paginationParameters,
+            ProductFilter productFilter)
+        {
+            var paginationResult = await _unitOfWork.ProductRepository.GetAllByPagination(paginationParameters, productFilter);
+
+            return GeneralResult<PaginationResult<Product>>.SuccessedResult(paginationResult);
+        }
+
+        public async Task<GeneralResult<ProductReadDto?>> GetProductAsync(int id)
+        {
+            var product = await _unitOfWork.ProductRepository.GetByIdWithCategoryAsync(id);
+
+            if (product == null)
+                return GeneralResult<ProductReadDto?>.NotFound("This Product Not Found");
+
+            //Mapping to DTO
+            var productReadDto = product.ToReadDto();
+
+            return GeneralResult<ProductReadDto?>.SuccessedResult(productReadDto);
+        }
+
+        public async Task<GeneralResult<ProductReadDto?>> AddProductAsync(ProductWriteDto productWriteDto)
+        {
+            var validationResult = await _writeProductValidator.ValidateAsync(productWriteDto);
+            if (!validationResult.IsValid)
+            {
+                Dictionary<string, List<Error>> errors = validationResult.ToError();
+                return GeneralResult<ProductReadDto?>.FailedResult(errors);
+            }
+
+            //Mapping from DTO to Model
+            Product product = productWriteDto.ToProductModel();
+
+            _unitOfWork.ProductRepository.Add(product);
+            await _unitOfWork.SaveAsync();
+
+            //Mapping to DTO
+            var productHelper = await _unitOfWork.ProductRepository.GetByIdWithCategoryAsync(product.Id);
+            ProductReadDto productReadDto = productHelper!.ToReadDto();
+
+            return GeneralResult<ProductReadDto?>.SuccessedResult(productReadDto);
+        }
+
+        public async Task<GeneralResult<ProductReadDto?>> EditProductAsync(int id, ProductWriteDto productWriteDto)
+        {
+            var validationResult = await _writeProductValidator.ValidateAsync(productWriteDto);
+            if (!validationResult.IsValid)
+            {
+                Dictionary<string, List<Error>> errors = validationResult.ToError();
+                return GeneralResult<ProductReadDto?>.FailedResult(errors);
+            }
+
+            var productUpdated = await _unitOfWork.ProductRepository.GetByIdWithCategoryAsync(id);
+            if (productUpdated == null)
+            {
+                return GeneralResult<ProductReadDto?>.NotFound("This Product Not Found");
+            }
+
+            productUpdated.Name = productWriteDto.Name;
+            productUpdated.Description = productWriteDto.Description;
+            productUpdated.Price = productWriteDto.Price;
+            productUpdated.Stock = productWriteDto.Stock;
+            productUpdated.Unit = productWriteDto.Unit;
+            productUpdated.Reviews = productWriteDto.Reviews;
+            productUpdated.IsOrganic = productWriteDto.IsOrganic;
+            productUpdated.IsFeatured = productWriteDto.IsFeatured;
+            productUpdated.CreatedAt = productWriteDto.CreatedAt == default
+                ? productUpdated.CreatedAt
+                : productWriteDto.CreatedAt;
+            productUpdated.ExpiryDate = productWriteDto.ExpiryDate;
+            productUpdated.ImageUrl = productWriteDto.ImageUrl;
+            productUpdated.CategoryId = productWriteDto.CategoryId;
+
+            await _unitOfWork.SaveAsync();
+
+            //Mapping to DTO
+            var product = await _unitOfWork.ProductRepository.GetByIdWithCategoryAsync(productUpdated.Id);
+            ProductReadDto productReadDto = product!.ToReadDTO();
+
+            return GeneralResult<ProductReadDto?>.SuccessedResult(productReadDto);
+        }
+
+        public async Task<GeneralResult> DeleteProductAsync(int id)
+        {
+            var productDeleted = await _unitOfWork.ProductRepository.GetByIdAsync(id);
+            if (productDeleted == null)
+                return GeneralResult.NotFound("This Product Not Found");
+
+            await _unitOfWork.ProductRepository.DeleteAsync(id);
+            await _unitOfWork.SaveAsync();
+
+            return GeneralResult.SuccessedResult();
+        }
+
+        public async Task<GeneralResult<IEnumerable<ProductReadDto>>> GetProductsByCategoryIdAsync(int categoryId)
+        {
+            var isCategoryExist = await _unitOfWork.CategoryRepository.GetByIdAsync(categoryId);
+            if (isCategoryExist == null)
+            {
+                return GeneralResult<IEnumerable<ProductReadDto>>.NotFound("This Category Not Found");
+            }
+
+            var products = await _unitOfWork.ProductRepository.GetAllByCategoryIdAsync(categoryId);
+
+            //Mapping to DTO
+            var productsReadDto = products.Select(p => p.ToReadDto());
+
+            return GeneralResult<IEnumerable<ProductReadDto>>.SuccessedResult(productsReadDto);
+        }
+    }
+}

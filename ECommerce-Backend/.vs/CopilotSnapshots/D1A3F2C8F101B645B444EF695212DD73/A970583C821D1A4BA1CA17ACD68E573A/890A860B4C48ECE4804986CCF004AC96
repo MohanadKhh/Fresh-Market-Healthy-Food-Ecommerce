@@ -1,0 +1,45 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
+namespace ECommerce.DAL
+{
+    public class Product
+    {
+        public int Id { get; set; }
+
+        public required string Name { get; set; }
+
+        public required string Description { get; set; }
+
+        public decimal Price { get; set; }
+
+        [Column("Stock")]
+        public int Stock { get; set; }
+
+        public string Unit { get; set; } = "kg";
+
+        public int Reviews { get; set; }
+
+        public bool IsOrganic { get; set; }
+
+        public bool IsFeatured { get; set; }
+
+        public DateOnly CreatedAt { get; set; }
+
+        public DateOnly? ExpiryDate { get; set; }
+
+        [Column("Image")]
+        public string? ImageUrl { get; set; }
+
+        public int CategoryId { get; set; }
+
+        public bool IsDeleted { get; set; } = false;
+
+        [JsonIgnore]
+        public virtual Category? Category { get; set; }
+
+        public virtual ICollection<CartItem> CartItems { get; set; } = new HashSet<CartItem>();
+
+        public virtual ICollection<OrderItem> OrderItems { get; set; } = new HashSet<OrderItem>();
+    }
+}

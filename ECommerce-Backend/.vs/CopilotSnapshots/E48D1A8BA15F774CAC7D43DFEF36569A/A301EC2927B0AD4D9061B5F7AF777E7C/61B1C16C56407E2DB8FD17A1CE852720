@@ -1,0 +1,15 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "JwtSettings": {
+    "SecretKey": "R6o1mHnmdvbOjfPzlYgpn8bYWxY+6mQ3B6l8QmxzQ9j2m7rY9b0tDUfM4U8hGv2I6v2x2Wf+8oLk7trzT2+YyQ==",
+    "ExpirationInMinutes": 60,
+    "Issuer": "ECommerce.APIs",
+    "Audience": "ECommerce.Client"
+  }
+}

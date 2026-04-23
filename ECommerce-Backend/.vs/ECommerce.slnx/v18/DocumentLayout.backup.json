@@ -1,0 +1,355 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF63F0A-B856-4A5E-76E0-133FAFA06D14}|ECommerce.DAL\\ECommerce.DAL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.dal\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADF63F0A-B856-4A5E-76E0-133FAFA06D14}|ECommerce.DAL\\ECommerce.DAL.csproj|solutionrelative:ecommerce.dal\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\managers\\product\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\managers\\product\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\validators\\filtering\\productfiltervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\validators\\filtering\\productfiltervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\validators\\pagination\\paginationparametersvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\validators\\pagination\\paginationparametersvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E1F497-AF5A-43FD-8005-26A98C3E508E}|ECommerce.Common\\ECommerce.Common.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.common\\filtering\\productfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E1F497-AF5A-43FD-8005-26A98C3E508E}|ECommerce.Common\\ECommerce.Common.csproj|solutionrelative:ecommerce.common\\filtering\\productfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E1F497-AF5A-43FD-8005-26A98C3E508E}|ECommerce.Common\\ECommerce.Common.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.common\\filtering\\basefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E1F497-AF5A-43FD-8005-26A98C3E508E}|ECommerce.Common\\ECommerce.Common.csproj|solutionrelative:ecommerce.common\\filtering\\basefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E1F497-AF5A-43FD-8005-26A98C3E508E}|ECommerce.Common\\ECommerce.Common.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.common\\pagination\\paginationparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E1F497-AF5A-43FD-8005-26A98C3E508E}|ECommerce.Common\\ECommerce.Common.csproj|solutionrelative:ecommerce.common\\pagination\\paginationparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\managers\\image\\imagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\managers\\image\\imagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\managers\\image\\iimagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\managers\\image\\iimagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\managers\\category\\categorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\managers\\category\\categorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\validators\\auth\\logindtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\validators\\auth\\logindtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\validators\\auth\\registerdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\validators\\auth\\registerdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.bll\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A405E14-A19E-4ECF-1F18-CF3F25291956}|ECommerce.BLL\\ECommerce.BLL.csproj|solutionrelative:ecommerce.bll\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.apis\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|solutionrelative:ecommerce.apis\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.apis\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|solutionrelative:ecommerce.apis\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.apis\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|solutionrelative:ecommerce.apis\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.apis\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|solutionrelative:ecommerce.apis\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.apis\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|solutionrelative:ecommerce.apis\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|d:\\mohanad.khh\\iti\\back-end\\asp.net-core\\api\\project\\ecommerce-backend\\ecommerce.apis\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E43620AE-6898-5793-C0AE-EE8342427404}|ECommerce.APIs\\ECommerce.APIs.csproj|solutionrelative:ecommerce.apis\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.DAL\\Repositories\\Product\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ECommerce.DAL\\Repositories\\Product\\ProductRepository.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.DAL\\Repositories\\Product\\ProductRepository.cs*",
+              "RelativeToolTip": "ECommerce.DAL\\Repositories\\Product\\ProductRepository.cs*",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowD4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:55:33.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductFilterValidator.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Validators\\Filtering\\ProductFilterValidator.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\Validators\\Filtering\\ProductFilterValidator.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Validators\\Filtering\\ProductFilterValidator.cs",
+              "RelativeToolTip": "ECommerce.BLL\\Validators\\Filtering\\ProductFilterValidator.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:52:43.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductFilter.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.Common\\Filtering\\ProductFilter.cs",
+              "RelativeDocumentMoniker": "ECommerce.Common\\Filtering\\ProductFilter.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.Common\\Filtering\\ProductFilter.cs",
+              "RelativeToolTip": "ECommerce.Common\\Filtering\\ProductFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:51:18.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaginationParametersValidator.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Validators\\Pagination\\PaginationParametersValidator.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\Validators\\Pagination\\PaginationParametersValidator.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Validators\\Pagination\\PaginationParametersValidator.cs",
+              "RelativeToolTip": "ECommerce.BLL\\Validators\\Pagination\\PaginationParametersValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:50:56.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductManager.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Managers\\Product\\ProductManager.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\Managers\\Product\\ProductManager.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Managers\\Product\\ProductManager.cs",
+              "RelativeToolTip": "ECommerce.BLL\\Managers\\Product\\ProductManager.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAiwLMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:05:02.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseFilter.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.Common\\Filtering\\BaseFilter.cs",
+              "RelativeDocumentMoniker": "ECommerce.Common\\Filtering\\BaseFilter.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.Common\\Filtering\\BaseFilter.cs",
+              "RelativeToolTip": "ECommerce.Common\\Filtering\\BaseFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:51:21.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaginationParameters.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.Common\\Pagination\\PaginationParameters.cs",
+              "RelativeDocumentMoniker": "ECommerce.Common\\Pagination\\PaginationParameters.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.Common\\Pagination\\PaginationParameters.cs",
+              "RelativeToolTip": "ECommerce.Common\\Pagination\\PaginationParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:50:27.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IImageManager.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Managers\\Image\\IImageManager.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\Managers\\Image\\IImageManager.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Managers\\Image\\IImageManager.cs",
+              "RelativeToolTip": "ECommerce.BLL\\Managers\\Image\\IImageManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:29:43.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImageManager.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Managers\\Image\\ImageManager.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\Managers\\Image\\ImageManager.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Managers\\Image\\ImageManager.cs",
+              "RelativeToolTip": "ECommerce.BLL\\Managers\\Image\\ImageManager.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAApwGkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:29:43.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryManager.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Managers\\Category\\CategoryManager.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\Managers\\Category\\CategoryManager.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Managers\\Category\\CategoryManager.cs",
+              "RelativeToolTip": "ECommerce.BLL\\Managers\\Category\\CategoryManager.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswHMAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T10:18:19.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginDtoValidator.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Validators\\Auth\\LoginDtoValidator.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\Validators\\Auth\\LoginDtoValidator.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Validators\\Auth\\LoginDtoValidator.cs",
+              "RelativeToolTip": "ECommerce.BLL\\Validators\\Auth\\LoginDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:02:44.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterDtoValidator.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Validators\\Auth\\RegisterDtoValidator.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\Validators\\Auth\\RegisterDtoValidator.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\Validators\\Auth\\RegisterDtoValidator.cs",
+              "RelativeToolTip": "ECommerce.BLL\\Validators\\Auth\\RegisterDtoValidator.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T12:02:44.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "ECommerce.APIs\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "ECommerce.APIs\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:59:57.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ECommerce.APIs\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ECommerce.APIs\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:59:31.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ECommerce.APIs\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ECommerce.APIs\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:29:32.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\DTOs\\Auth\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "ECommerce.BLL\\DTOs\\Auth\\RegisterDto.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.BLL\\DTOs\\Auth\\RegisterDto.cs",
+              "RelativeToolTip": "ECommerce.BLL\\DTOs\\Auth\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:58:46.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ImageController.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\ImageController.cs",
+              "RelativeDocumentMoniker": "ECommerce.APIs\\Controllers\\ImageController.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\ImageController.cs",
+              "RelativeToolTip": "ECommerce.APIs\\Controllers\\ImageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:59:55.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "ECommerce.APIs\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "ECommerce.APIs\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:59:45.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "ECommerce.APIs\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\ASP.NET-Core\\API\\Project\\ECommerce-Backend\\ECommerce.APIs\\Controllers\\CartController.cs",
+              "RelativeToolTip": "ECommerce.APIs\\Controllers\\CartController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T11:59:33.763Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

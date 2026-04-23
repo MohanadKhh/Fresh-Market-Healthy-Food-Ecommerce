@@ -1,0 +1,195 @@
+using ECommerce.BLL;
+using ECommerce.DAL;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi;
+using Scalar.AspNetCore;
+using System.Text.Json.Serialization;
+
+namespace ECommerce.APIs
+{
+    public class Program
+    {
+        public static async Task Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+            builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+            {
+                // Prevent cycles from navigation properties (Cart -> CartItems -> Cart ...)
+                options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+
+                // Optional: ignore null properties in responses
+                //options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+
+                // Optional: serialize enums as strings instead of numbers
+                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            });
+
+            // Add services of DAL Layer.
+            builder.Services.AddDALServices(builder.Configuration);
+
+            // Add services of BLL Layer.
+            builder.Services.AddBllServices();
+
+            /*------------------------------------------------------------------*/
+            builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
+
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                     .AddEntityFrameworkStores<AppDbContext>()
+                     .AddDefaultTokenProviders();
+            /*------------------------------------------------------------------*/
+            builder.Services.Configure<IdentityOptions>(options =>
+            {
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);
+                options.Lockout.AllowedForNewUsers = true;  
+
+                options.SignIn.RequireConfirmedEmail = true;
+                options.SignIn.RequireConfirmedPhoneNumber = true;
+
+                options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@";
+
+                options.User.RequireUniqueEmail = true;
+
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequiredUniqueChars = 5;
+            });
+            /*------------------------------------------------------------------*/
+            //Authenticate – Check if the request has valid credentials(like a JWT token).
+            //This uses the DefaultAuthenticateScheme.
+            //If valid, User is populated.
+            //Challenge – What to do if authentication fails(no token or invalid token).
+            //This uses the DefaultChallengeScheme.
+            //By default, it could redirect to login, return 404, or return 401 depending on the scheme.
+            /*------------------------------------------------------------------*/
+            var jwtSettings = builder.Configuration.GetSection("JwtSettings").Get<JwtSettings>() ?? new JwtSettings();
+
+            if (string.IsNullOrWhiteSpace(jwtSettings.SecretKey))
+                throw new InvalidOperationException("JwtSettings:SecretKey is missing.");
+
+            byte[] keyBytes;
+            try
+            {
+                keyBytes = Convert.FromBase64String(jwtSettings.SecretKey);
+            }
+            catch (FormatException)
+            {
+                throw new InvalidOperationException("JwtSettings:SecretKey must be a valid Base64 string.");
+            }
+
+            if (keyBytes.Length < 16)
+                throw new InvalidOperationException("JwtSettings:SecretKey must be at least 128 bits (16 bytes).");
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = jwtSettings.Issuer,
+                    ValidAudience = jwtSettings.Audience,
+                    IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
+            /*------------------------------------------------------------------*/
+            builder.Services.AddAuthorization(options =>
+            {
+                // Example 1: Role-Based Policy
+                options.AddPolicy("Admin", policy =>
+                policy.RequireRole("Admin"));
+
+                options.AddPolicy("User", policy =>
+                policy.RequireRole("User"));
+
+                options.AddPolicy("UserOrAdmin", policy =>   // Or
+                policy.RequireRole("Admin", "User"));
+
+                options.AddPolicy("UserAndAdmin", policy =>
+                policy.RequireRole("Admin").RequireRole("User")); // AND — rare edge case
+
+
+                //// Example 2: Claim-Based Policy
+                //options.AddPolicy("Employee", policy =>
+                //policy.RequireClaim("EmployeeNumber"));
+
+                //// Example 3: Role-Based Policy - Claim-Based Policy
+                //options.AddPolicy("Employee", policy =>
+                //policy.RequireClaim("EmployeeNumber").RequireRole("Admin").RequireRole(""));
+
+                //// Example 3: Custom Requirement
+                //options.AddPolicy("Over18", policy =>
+                //policy.RequireAssertion(context =>
+                //context.User.HasClaim(c => c.Type == "Age" && int.Parse(c.Value) >= 18)));
+            });
+
+
+            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+            builder.Services.AddOpenApi();
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    policy.WithOrigins("http://localhost:4200")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
+
+            /*------------------------------------------------------------------*/
+
+            var app = builder.Build();
+
+            //Add Roles, Admin default account, and seeding data
+            using (var scope = app.Services.CreateScope())
+            {
+                await DefaultDataSeeder.SeedRolesAsync(scope.ServiceProvider);
+                await CatalogDataSeeder.SeedAsync(scope.ServiceProvider);
+            }
+
+            // Configure the HTTP request pipeline.
+            if (app.Environment.IsDevelopment())
+            {
+                app.MapOpenApi();
+                app.MapScalarApiReference();
+            }
+
+            //needed to access files from files folder using url as it doesn't in wwwroot folder
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "Files")),
+                RequestPath = "/Files"
+            });
+
+            app.UseHttpsRedirection();
+
+            app.UseAuthentication();
+
+            app.UseAuthorization();
+
+            app.UseCors("AllowFrontend");
+
+            app.MapControllers();
+
+            app.Run();
+        }
+    }
+}

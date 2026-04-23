@@ -1,0 +1,31 @@
+﻿using ECommerce.Common;
+using FluentValidation;
+
+namespace ECommerce.BLL
+{
+    public class ProductFilterValidator : AbstractValidator<ProductFilter>
+    {
+        public ProductFilterValidator()
+        {
+            RuleFor(f => f.MinPrice)
+                .GreaterThanOrEqualTo(0)
+                .WithMessage("MinPrice must be greater than or equal to 0.")
+                .WithErrorCode("ERR-01");
+
+            RuleFor(f => f.MaxPrice)
+                .GreaterThanOrEqualTo(0)
+                .WithMessage("MaxPrice must be greater than or equal to 0.")
+                .WithErrorCode("ERR-02");
+
+            RuleFor(f => f)
+                .Must(f => f.MaxPrice == 0 || f.MinPrice == 0 || f.MaxPrice >= f.MinPrice)
+                .WithMessage("MaxPrice must be greater than or equal to MinPrice.")
+                .WithErrorCode("ERR-03");
+
+            RuleFor(f => f.SortBy)
+                .Must(sortBy => string.IsNullOrWhiteSpace(sortBy) || sortBy.Equals("price", StringComparison.OrdinalIgnoreCase))
+                .WithMessage("SortBy must be empty or 'price'.")
+                .WithErrorCode("ERR-04");
+        }
+    }
+}
