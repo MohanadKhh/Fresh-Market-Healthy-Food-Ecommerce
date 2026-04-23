@@ -288,7 +288,7 @@ Password: Admin@123456
 
 A full Postman testing walkthrough is available here:
 
-🎥 **[Postman Testing Video →](https://your-video-link-here)**
+🎥 **[Postman Testing Video →]([https://your-video-link-here](https://drive.google.com/file/d/1bLUjw1jQVRSDvzhe9jKHrSof1RtIvpZE/view?usp=sharing))**
 
 **To test locally:**
 1. Run the project
