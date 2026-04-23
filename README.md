@@ -1,111 +1,298 @@
 # Fresh Market - Healthy Food ECommerce API
 
-A layered ASP.NET Core Web API project for an e-commerce system with authentication, product/category management, carts, orders, image upload, filtering, and pagination.
+A fully-featured RESTful backend API for an e-commerce platform built with **ASP.NET Core**, supporting product browsing, cart management, and order processing with JWT authentication.
+
+---
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [API Endpoints](#api-endpoints)
+- [Authentication](#authentication)
+- [Testing](#testing)
+
+---
+
+## Overview
+
+ECommerce API is a backend-only system that allows users to browse products, manage their cart, and place orders. It supports role-based access control with **Admin** and **User** roles, JWT authentication, and clean N-Tier architecture.
+
+---
+
+## Architecture
+
+The project follows **N-Tier Architecture** with 3 layers + Common:
+
+```
+ECommerce.APIs        → Controllers, Middleware, Program.cs
+ECommerce.BLL         → Business Logic, Managers, Validators, DTOs
+ECommerce.DAL         → DbContext, Models, Repositories, Migrations
+ECommerce.Common      → Shared models (Result Pattern, Settings, Errors)
+```
+
+**Design Patterns Used:**
+- Repository Pattern (Generic + Non-Generic)
+- Unit of Work
+- Result Pattern (General Response Wrapper)
+- DTOs with FluentValidation
+- Async/Await throughout
+
+---
 
 ## Tech Stack
 
-- .NET 10
-- ASP.NET Core Web API
-- Entity Framework Core
-- SQL Server
-- ASP.NET Core Identity
-- JWT Authentication
-- FluentValidation
-- Scalar / OpenAPI
+| Technology | Usage |
+|---|---|
+| ASP.NET Core 8 | Web API Framework |
+| Entity Framework Core | ORM + Migrations |
+| Microsoft Identity | User Management |
+| JWT Bearer | Authentication |
+| FluentValidation | Request Validation |
+| SQL Server | Database |
+| Scalar | API Documentation |
 
-## Solution Structure
-
-- `ECommerce.APIs` -> Presentation layer (controllers, startup)
-- `ECommerce.BLL` -> Business logic (managers, DTOs, validators, mapping)
-- `ECommerce.DAL` -> Data access (DbContext, repositories, unit of work, seeders)
-- `ECommerce.Common` -> Shared models (general result, filtering, pagination)
+---
 
 ## Features
 
-- JWT-based authentication and authorization
-- Role-based access (`Admin`, `User`)
-- Product CRUD + filtering + pagination
-- Category CRUD
-- Cart operations (add/remove/update items)
-- Order placement and retrieval
-- Image upload for products and categories
-- Seed data for roles/admin/catalog
+- ✅ User registration and login with JWT tokens
+- ✅ Role-based authorization (Admin / User)
+- ✅ UserId extracted from JWT claims — never passed in requests
+- ✅ Product browsing with filtering, search, and pagination
+- ✅ Category management
+- ✅ Cart management (add, update, remove items)
+- ✅ Order placement with stock validation
+- ✅ Order history and details
+- ✅ Image upload for products and categories
+- ✅ Result pattern for consistent API responses
+- ✅ CORS enabled
+- ✅ Default Admin account and roles seeded on startup
+
+---
+
+## Project Structure
+
+```
+ECommerce-Backend/
+│
+├── ECommerce.APIs/
+│   ├── Controllers/
+│   │   ├── AuthController.cs
+│   │   ├── ProductsController.cs
+│   │   ├── CategoriesController.cs
+│   │   ├── CartController.cs
+│   │   ├── OrdersController.cs
+│   │   └── ImageController.cs
+│   ├── Files/
+│   └── Program.cs
+│
+├── ECommerce.BLL/
+│   ├── Managers/
+│   │   ├── Auth/
+│   │   ├── Products/
+│   │   ├── Categories/
+│   │   ├── Cart/
+│   │   └── Orders/
+│   ├── DTOs/
+│   ├── Validators/
+│   ├── Mapping/
+│   └── Extensions/
+│
+├── ECommerce.DAL/
+│   ├── Models/
+│   │   ├── ApplicationUser.cs
+│   │   ├── Product.cs
+│   │   ├── Category.cs
+│   │   ├── Cart.cs
+│   │   ├── CartItem.cs
+│   │   ├── Order.cs
+│   │   └── OrderItem.cs
+│   ├── Repositories/
+│   │   ├── Generic/
+│   │   └── NonGeneric/
+│   ├── UnitOfWork/
+│   ├── Seed/
+│   ├── Migrations/
+│   └── AppDbContext.cs
+│
+└── ECommerce.Common/
+    ├── Results/
+    ├── Errors/
+    └── Settings/
+        └── JwtSettings.cs
+```
+
+---
 
 ## Getting Started
 
-### 1) Prerequisites
+### Prerequisites
 
-- .NET 10 SDK
-- SQL Server (LocalDB / SQLExpress / SQL Server)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)
+- [SQL Server](https://www.microsoft.com/en-us/sql-server)
+- [EF Core CLI](https://learn.microsoft.com/en-us/ef/core/cli/dotnet)
 
-### 2) Configure settings
+```bash
+dotnet tool install --global dotnet-ef
+```
 
-Edit:
+### Installation
 
-- `ECommerce.APIs/appsettings.Development.json`
+**1. Clone the repository**
+```bash
+git clone https://github.com/your-username/ECommerce-Backend.git
+cd ECommerce-Backend
+```
 
-Update:
+**2. Configure appsettings.json**
 
-- `ConnectionStrings:ECommerce`
-- `JwtSettings:Issuer`
-- `JwtSettings:Audience`
-- `JwtSettings:ExpirationInMinutes`
-- `JwtSettings:SecretKey` (Base64, minimum 16 bytes after decode)
+Update `ECommerce.APIs/appsettings.json`:
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=.;Database=ECommerceDB;Trusted_Connection=True;TrustServerCertificate=True"
+  },
+  "JwtSettings": {
+    "SecretKey": "YourStrongSecretKeyHereMinimum16Chars",
+    "Issuer": "ECommerceAPI",
+    "Audience": "ECommerceClient",
+    "DurationInDays": 7
+  }
+}
+```
 
-> Do not use production secrets in source control.
-
-### 3) Apply migrations
-
-From solution root:
-
-```powershell
+**3. Apply migrations**
+```bash
+dotnet ef migrations add InitialCreate --project ECommerce.DAL --startup-project ECommerce.APIs
 dotnet ef database update --project ECommerce.DAL --startup-project ECommerce.APIs
 ```
 
-### 4) Run the API
-
-```powershell
+**4. Run the project**
+```bash
 dotnet run --project ECommerce.APIs
 ```
 
-## API Documentation
+**5. Open API docs**
+```
+https://localhost:7021/scalar
+```
 
-In development, OpenAPI and Scalar are enabled by default in `Program.cs`.
+---
 
-After running, open the documented endpoints from the API host.
+## Environment Variables
 
-## Authentication Flow
+| Key | Description | Example |
+|---|---|---|
+| `ConnectionStrings:DefaultConnection` | SQL Server connection string | `Server=.;Database=ECommerceDB;...` |
+| `JwtSettings:SecretKey` | JWT signing key (min 16 chars) | `MyStrongSecretKey123!` |
+| `JwtSettings:Issuer` | Token issuer name | `ECommerceAPI` |
+| `JwtSettings:Audience` | Token audience name | `ECommerceClient` |
+| `JwtSettings:DurationInDays` | Token expiry in days | `7` |
 
-1. `POST /api/Auth/register`
-2. `POST /api/Auth/login`
-3. Use returned bearer token in:
-   - `Authorization: Bearer <token>`
+---
 
-## Main Endpoints
+## API Endpoints
 
-- `api/Auth`
-- `api/Product`
-- `api/Category`
-- `api/Cart`
-- `api/Order`
+### Auth
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| POST | `/api/auth/register` | Register new user | ❌ |
+| POST | `/api/auth/login` | Login and get JWT token | ❌ |
 
-## Static Files
+### Categories
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| GET | `/api/categories` | Get all categories | ❌ |
+| GET | `/api/categories/{id}` | Get category by id | ❌ |
+| POST | `/api/categories` | Create category | ✅ Admin |
+| PUT | `/api/categories/{id}` | Update category | ✅ Admin |
+| DELETE | `/api/categories/{id}` | Delete category | ✅ Admin |
+| POST | `/api/categories/{id}/image` | Upload category image | ✅ Admin |
 
-Uploaded files are served from:
+### Products
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| GET | `/api/products` | Get products (filter + search + pagination) | ❌ |
+| GET | `/api/products/{id}` | Get product by id | ❌ |
+| POST | `/api/products` | Create product | ✅ Admin |
+| PUT | `/api/products/{id}` | Update product | ✅ Admin |
+| DELETE | `/api/products/{id}` | Delete product | ✅ Admin |
+| POST | `/api/products/{id}/image` | Upload product image | ✅ Admin |
 
-- Physical path: `ECommerce.APIs/Files`
-- Public path: `/Files/*`
+### Cart
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| GET | `/api/cart` | Get current user cart | ✅ User |
+| POST | `/api/cart` | Add item to cart | ✅ User |
+| PUT | `/api/cart` | Update cart item quantity | ✅ User |
+| DELETE | `/api/cart/{productId}` | Remove item from cart | ✅ User |
 
-## CORS
+### Orders
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| POST | `/api/orders` | Place a new order | ✅ User |
+| GET | `/api/orders` | Get order history | ✅ User |
+| GET | `/api/orders/{id}` | Get order details | ✅ User |
 
-Configured in `Program.cs` with policy `AllowFrontend` (currently allowing `http://localhost:4200`).
+### Images
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| POST | `/api/image/upload` | Upload image | ✅ Admin |
 
-## Notes
+---
 
-- Token lifetime is enforced with `ValidateLifetime = true` and `ClockSkew = TimeSpan.Zero`.
-- This project uses layered architecture and a Unit of Work + Repository pattern.
-- If you change domain models, create and apply new EF migrations.
+## Authentication
 
-## License
+The API uses **JWT Bearer Authentication** with **Policy-Based Authorization**.
 
-Add your license information here.
+**How to authenticate:**
+
+1. Register or login to get a token:
+```http
+POST /api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@ecommerce.com",
+  "password": "Admin@123456"
+}
+```
+
+2. Use the token in subsequent requests:
+```http
+GET /api/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Default Admin Account (seeded on startup):**
+```
+Email:    admin@ecommerce.com
+Password: Admin@123456
+```
+
+**Authorization Policies:**
+| Policy | Roles | Used On |
+|---|---|---|
+| `AdminOnly` | Admin | Create/Update/Delete products & categories |
+| `AdminOrUser` | Admin, User | Cart & Orders |
+
+---
+
+## Testing
+
+A full Postman testing walkthrough is available here:
+
+🎥 **[Postman Testing Video →](https://your-video-link-here)**
+
+**To test locally:**
+1. Run the project
+2. Open Scalar at `https://localhost:7021/scalar`
+3. Register a user or use the default admin account
+4. Copy the JWT token from login response
+5. Use `Bearer <token>` in Authorization header for protected endpoints
